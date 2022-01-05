@@ -51,3 +51,6 @@ insert into parking(PARKING_NUMBER,AVAILABLE,TYPE) values(3,true,'CAR');
 insert into parking(PARKING_NUMBER,AVAILABLE,TYPE) values(4,true,'BIKE');
 insert into parking(PARKING_NUMBER,AVAILABLE,TYPE) values(5,true,'BIKE');
 commit;
+
+-- Set the time zone in MySQL to avoid error.
+SET GLOBAL time_zone = '+1:00';

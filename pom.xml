@@ -140,6 +140,31 @@
                     </execution>
                 </executions>
             </plugin>
+            <!-- To run code -->
+            <plugin>
+              <groupId>org.codehaus.mojo</groupId>
+              <artifactId>exec-maven-plugin</artifactId>
+              <version>3.0.0</version>
+              <executions>
+                <execution>
+                  <goals>
+                    <goal>exec</goal>
+                  </goals>
+                </execution>
+              </executions>
+              <configuration>
+                <executable>maven</executable>
+                <mainClass>com.parkit.parkingsystem.App</mainClass>
+                <arguments>
+                  <args>${args}</args>
+                </arguments>
+                <environmentVariables>
+                  <LANG>en_US</LANG>
+                </environmentVariables>
+              </configuration>
+            </plugin>
+
+
         </plugins>
     </build>
 
