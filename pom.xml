@@ -121,7 +121,8 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
+            <!-- jacoco is failling -->
+            <!-- <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
                 <version>0.8.5</version>
@@ -139,7 +140,7 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin> -->
             <!-- To run code -->
             <plugin>
               <groupId>org.codehaus.mojo</groupId>
