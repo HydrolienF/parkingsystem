@@ -33,10 +33,14 @@ https://dev.mysql.com/downloads/mysql/
 After downloading the mysql 8 installer and installing it, you will be asked to configure the password for the default `root` account.
 This code uses the default root account to connect and the password can be set as `rootroot`. If you add another user/credentials make sure to change the same in the code base.
 
-Use MySQL :
+#Use MySQL :
 Launch MySQL with
 "services.msc"
 then find MySQL80 left clic launch.
+#launch / stop service from cmd line (to test)
+"C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld"
+"C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqladmin" -u root shutdown
+cf https://tableplus.com/blog/2018/10/how-to-start-stop-restart-mysql-server.html
 
 ### Running App
 
